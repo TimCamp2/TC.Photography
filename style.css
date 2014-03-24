@@ -1,0 +1,37 @@
+* {
+    background-color:darkolivegreen;
+    color: white;
+}
+
+.navbar ul li {
+    padding: 0;
+    display: inline;
+    margin: 0 auto;
+}
+
+#slider-nav { 
+	display: none; 
+	margin-top: 1em;
+}
+
+#slider-nav button {
+	padding: 1em;
+	margin-right: 1em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.slider ul {
+	width: 10000px;
+	list-style:none;
+    width: 600px;
+    margin: 100px auto 0;
+    display:inline-block;
+}
+
+.slider li {
+	float: left;
+}
+
+
+
