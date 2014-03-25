@@ -1,12 +1,48 @@
-* {
-    background-color:darkolivegreen;
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.header {
+    margin:auto;
+    background-color: #4682B4;
     color: white;
 }
 
-.navbar ul li {
+.bigBlock {
+    background-color: darkslategrey;
+    margin: auto;
     padding: 0;
+    width:100%;
+    display: block;
+    padding: 5px 5px;
+}
+
+#title {
     display: inline;
-    margin: 0 auto;
+    border-width:5px 0;
+    list-style:none;
+    margin:auto 0;
+    padding:0;
+    text-align:center;
+    font-family:'Arial Rounded MT';
+}
+
+nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family:Arial, Calibri;
+    font-size: 14px;
+}
+
+nav li{
+    display:inline;
+}
+
+nav a{
+    display:inline-block;
+    padding:0px;
 }
 
 #slider-nav { 
@@ -22,16 +58,16 @@
 }
 
 .slider ul {
-	width: 10000px;
+	width: 10000px; /*This updates if pics on same line*/
 	list-style:none;
-    width: 600px;
-    margin: 100px auto 0;
+    margin: 5px auto 0;
     display:inline-block;
 }
 
 .slider li {
 	float: left;
 }
+
 
 
 
