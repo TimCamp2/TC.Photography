@@ -1,6 +1,7 @@
 function Slider(container, nav) {
     this.container = container;
     this.nav = nav.show();
+
     this.imgs = this.container.find('img');
     this.imgWidth = this.imgs[0].width; // 600
     this.imgsLen = this.imgs.length;
@@ -14,8 +15,6 @@ Slider.prototype.transition = function (coords) {
     });
 };
 
-
-//with dir from HTML, it will now be set to next or prev
 Slider.prototype.setCurrent = function (dir) {
     var pos = this.current;
 

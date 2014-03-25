@@ -1,0 +1,61 @@
+body {
+	margin: 50px auto 0; 
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.slider-nav { 
+	display: none; 
+	margin-top: 1em;
+}
+
+.slider-nav button {
+    padding: 1em;
+    margin-right: 1em;
+	border-radius: 10px;
+	cursor: pointer;
+    display: inline-block;
+    margin: -100px auto;
+}
+
+.slider {
+    position: relative;
+    width: 1000px;
+    height: auto;
+	overflow: scroll;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider ul {
+	width: 10000px;
+	list-style: none;
+}
+
+.slider li {
+	float: left;
+}
+
+button {
+    border:hidden;
+    background-color: transparent;
+}
+
+#back {
+    margin: 0;
+    display: block;
+    float: left;
+    margin-left: 200px;
+    z-index: 1;
+}
+
+#forward {
+    margin: 0;
+    display: block;
+    float: right;
+    margin-right: 200px;
+    z-index: 1;
+}

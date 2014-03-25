@@ -4,48 +4,43 @@
 <head>
     <meta charset=utf-8>
     <title>TC Photography</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+
 </head>
 <body>
-    <div class="header">
-        <div id="title">Tim Campbell Photography</div>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+
+
+    <div class="slider">
+        <ul>
+            <li><img src="img/DSC_2756.jpg" alt="image" width= '1000px' height="auto" /></li>
+            <li><img src="img/DSC_2771.JPG" alt="image" width= '1000px' height="auto" /></li>
+            <li><img src="img/DSC_3070.JPG" alt="image" width= '1000px' height="auto" /></li>
+        </ul>
     </div>
 
-    <div class="bigBlock">
-        <div class="slider">
-            <ul>
-                <li><img src="img/DSC_2756.jpg" alt="image" width="30%" height="auto" /></li>
-                <li><img src="img/DSC_2771.JPG" alt="image" width="30%" height="auto" /></li>
-                <li><img src="img/DSC_3070.JPG" alt="image" width="30%" height="auto" /></li>
-            </ul>
-        </div>
 
-        <div id="slider-nav">
-            <button data-dir="prev">Previous</button>
-            <button data-dir="next">Next</button>
-        </div>
+    <div id="back" class="slider-nav">
+        <button data-dir="prev"><img src="img/leftArrow.PNG" /></button>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <div id="forward" class="slider-nav">
+        <button data-dir="next"><img src="img/rightArrow.PNG" /></button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="slider.js"></script>
     <script>
+
         (function () {
             var container = $('div.slider').css('overflow', 'hidden').children('ul'),
-                slider = new Slider(container, $('#slider-nav'));
+                slider = new Slider(container, $('.slider-nav'));
 
             slider.nav.find('button').on('click', function () {
                 slider.setCurrent($(this).data('dir'));
                 slider.transition();
             });
         })();
-    </script>
 
+
+
+    </script>
 </body>
 </html>
