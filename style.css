@@ -1,32 +1,14 @@
 body {
-    background-color:aliceblue
+    background-color:darkslategrey;
 }
 
 .header {
-    margin:auto;
+    margin-bottom: 20px;
     background-color: #4682B4;
     color: white;
 }
 
-.bigBlock {
-    background-color: darkslategrey;
-    margin: auto;
-    padding: 0;
-    width:100%;
-    display: block;
-}
-
-#title {
-    display: inline;
-    border-width:5px 0;
-    list-style:none;
-    margin:auto 0;
-    padding:0;
-    text-align:center;
-    font-family:'Arial Rounded MT';
-}
-
-nav{
+.header nav{
     list-style:none;
     margin:0;
     padding:0;
