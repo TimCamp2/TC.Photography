@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Desert</title>
+
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="jquery-photo-resize.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $("img").photoResize({
+            bottomSpacing: 40
+        });
+    });
+
+</script>
+<style type="text/css" media="screen">
+    body {
+        text-align: center;
+        margin: 0 auto 0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0; /*add here to put space at top*/
+    }
+
+    </style > 
+    <link rel="stylesheet" href="slider.css" >
+
+	</head>
+
+<body>
+    
+    
+
+    <div class="slider">
+        <ul>
+            <li><img src="C:/Users/Tim/Documents/GitHub/TC.Photography/img/DSC_2756.jpg" alt="image" /></li>
+            <li><img src="C:/Users/Tim/Documents/GitHub/TC.Photography/img/DSC_2771.jpg" alt="image" /></li>
+        </ul>
+    </div>
+
+    <div id="slider-nav">
+        <button data-dir="prev">Previous</button>
+        <button data-dir="next">Next</button>
+    </div>
+
+
+    <script src="slider.js"></script>
+    <script>
+
+        (function () {
+            var container = $('div.slider').css('overflow', 'hidden').children('ul'),
+                slider = new Slider(container, $('#slider-nav'));
+
+            slider.nav.find('button').on('click', function () {
+                slider.setCurrent($(this).data('dir'));
+                slider.transition();
+            });
+        })();
+
+
+
+    </script>
+
+</body>
+</html>

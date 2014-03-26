@@ -6,6 +6,7 @@ body {
     margin-bottom: 20px;
     background-color: #4682B4;
     color: white;
+    font-family: Arial;
 }
 
 .header nav{
@@ -13,12 +14,14 @@ body {
     margin:0;
     padding:0;
     text-align:center;
-    font-family:Arial, Calibri;
-    font-size: 14px;
+    font-family: Arial Narrow, Calibri;
+    font-size: 16px;
 }
 
 nav li{
     display:inline;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 nav a{
