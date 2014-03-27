@@ -23,7 +23,16 @@
     </style>
     <link rel="stylesheet" type="text/css" href="slider.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-photo-resize.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $("img").photoResize({
+                bottomSpacing: 20
+            });
+        });
 
+    </script>
 </head>
 <body>
     <div class="header">
@@ -47,13 +56,12 @@
 
 
     <div id="back" class="slider-nav">
-        <button data-dir="prev"><img src="img/leftArrow2.PNG" /></button>
+        <button data-dir="prev"> << </button>
     </div>
     <div id="forward" class="slider-nav">
-        <button data-dir="next"><img src="img/rightArrow2.PNG" /></button>
+        <button data-dir="next"> >> </button>
     </div>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="jquery-photo-resize.js"></script>
+
     <script src="slider.js"></script>
     <script>
 
@@ -68,17 +76,6 @@
             });
         })();
 
-
-
-    function set_body_height() {
-        var wh = $(window).height();
-        $('body').height(wh); // body height = window height
-    } // set the height to the image container so that the max-height property on the image just works as expected. The image will also automatically resize.
-        $(document).ready(function () {
-            set_body_height();
-            $(window).bind('resize', function () { set_body_height(); });
-        });
-       
      </script>
 
 </body>
