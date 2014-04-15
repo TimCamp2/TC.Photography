@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>TC Photography</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fit {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .center {
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-photo-resize.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $("img").photoResize({
+                bottomSpacing: 40
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h2>Tim Campbell</h2>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slider">
+        <ul>
+            <li><img src="img/DSC_2756.jpg" alt="image" /></li> <!--height(auto)/width(1100) removed-->
+            <li><img src="img/DSC_2771.JPG" alt="image" /></li>
+            <li><img src="img/DSC_3070.JPG" alt="image" /></li>
+        </ul>
+    </div>
+
+
+    <div id="back" class="slider-nav">
+        <button data-dir="prev"> < </button>
+    </div>
+    <div id="forward" class="slider-nav">
+        <button data-dir="next"> > </button>
+    </div>
+
+    <script src="slider.js"></script>
+    <script>
+
+
+        (function () {
+            var container = $('div.slider').css('overflow', 'hidden').children('ul'),
+                slider = new Slider(container, $('.slider-nav'));
+
+            slider.nav.find('button').on('click', function () {
+                slider.setCurrent($(this).data('dir'));
+                slider.transition();
+            });
+        })();
+
+     </script>
+
+</body>
+</html>
