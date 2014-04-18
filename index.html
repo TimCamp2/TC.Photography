@@ -2,13 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>TC Photography</title>
+    <title>Tim Campbell</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://flip.hr/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="navbar navbar-static-top">
+
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
                 <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -16,17 +19,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand" href="./index.html"></a>
+                <a class="brand scroll-top" href="#">Tim Campbell</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="active">
-                            <a href="./index.html">About</a>
+                            <a href="#" class="scroll-link" data-id="about">About</a>
                         </li>
                         <li>
-                            <a href="./getting-started.html">Gallery</a>
+                            <a href="#" class="scroll-link" data-id="gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="./customize.html">Contact</a>
+                            <a href="#" class="scroll-link" data-id="contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -37,16 +40,16 @@
 
     <div class="wrap">
         <div class="coverPhoto"><img src="img/DSC_3070.JPG" /></div>
-        <div id="profile"><img src="img/profilepic.jpg" width="200px" height="auto"/></div>
+        <div class="profile" id="about"><img src="img/profilepic.png" width="200px" height="auto" /></div>
         <div id="invisible"></div>
     </div>
 
 
 
     
-    <div class="container" id="topBar">
+    <div class="container page-section" id="about"> <!--pagesection broken down individually on accompanying instructions-->
             <div class="row">
-                <h1 class="text-center">Tim Campbell Photography</h1>
+                <h1 class="text-center">Tim Campbell</h1>
             </div>
     </div>
 
@@ -54,32 +57,45 @@
 
     
 
-    <div class="row-fluid" id="blueLine">
+    <div class="row-fluid page-section blueLine" id="gallery">
         <div class="container">
-            <!--Three js popout boxes-->
-                <div class="span4 text-center clickable">
-                    <h2>Box</h2>
-                </div><!-- .span4 -->
+            <h1>Gallery</h1>
+            <ul class="thumbnails">
+                <!--Three js popout boxes-->
+                <li class="span4 text-center">
+                    <a class="thumbnail" href="#">
+                        <img src="img/DSC_2756.JPG" alt="My Image" />
+                        <span class="caption">This is my image</span>
+                    </a>
+                </li><!-- .span4 -->
 
-            <div class="span4 text-center clickable">
-                <h2>Box  2</h2>
-            </div><!-- .span4 -->
+                <li class="span4 text-center">
+                    <a class="thumbnail" href="#">
+                        <img src="img/DSC_2771.JPG" alt="My Image" />
+                        <span class="caption">This is my image</span>
+                    </a>
+                </li><!-- .span4 -->
 
-            <div class="span4 text-center clickable">
-                <h2>Box  3</h2>
-                <!--<p>Even more text </p>
-        <p><a class="btn" href="#">Click meeee &raquo;</a></p>  Unused button-->
-            </div><!-- .span4 -->
+                <li class="span4 text-center">
+                    <a class="thumbnail" href="#">
+                        <img src="img/DSC_3070.JPG" alt="My Image" />
+                        <span class="caption">This is my image</span>
+                    </a>
+                </li><!-- .span4 -->
+            </ul>
         </div>
     </div>
-
-
-
 
     <div id="wrap">
 
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer page-section" id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>

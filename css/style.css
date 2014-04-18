@@ -1,47 +1,64 @@
 html, body {
   height: 100%;
   background-color: white;
+  font-family: raleway, Helvetica, Arial, sans-serif;
 }
 
-h1 {
-    font-family: 'Nobile', Helvetica, Arial, sans-serif;
-    }
+/*h1 {
+    font-family: raleway;'Nobile', Helvetica, Arial, sans-serif;
+    }*/
 
 .wrap {
     position: relative;
 }
 
+.navbar {
+   background-color: transparent;
+   background: transparent;
+}
 
-#profile {
+.navbar li { 
+    color: #000 
+
+} 
+
+.profile {
     position: absolute;
-    left: 50%;
-    top: 85%;
+    top: 88%;
+    left:43%;
+    right: 43%;
+    max-width: 200px;
     overflow: hidden;
     border: 2px solid white;
-    box-shadow: 0 0 2px .5px black; /*sets secondary pic outline*/
+    box-shadow: 0 0 1.5px 1.5px black; /*sets secondary pic outline*/
     border-radius: 100%;
 }
 
 #invisible {
     float: left;
     display: inline-block;
-    height: 135px;
+    height: 100px;
     width: 100%;
 }
 
-#blueLine {
+.blueLine {
     margin-top: 10%;
-    background-color: #5F9EA0;
+    background-color: #C1CDC1;
     height: 40%;
 }
 
-.clickable {
-    border: 3px solid black;
+/*.clickable {
+    border: 2px solid black;
     border-radius: 20px;
-}
+    background: #EBECE4;
+}*/
 
 #wrap {
   min-height: 100%;
+}
+
+li img {
+    border-radius: 5px;
 }
 
 #main {
@@ -55,5 +72,6 @@ h1 {
   height: 150px;
   clear:both;
   padding-top:20px;
-  background-color: black;
+  background-color: #2E2E2E;
+  color: #FDFDF0;
 } 
