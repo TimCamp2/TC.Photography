@@ -60,42 +60,62 @@
     <div class="row-fluid page-section blueLine" id="gallery">
         <div class="container">
             <h1>Gallery</h1>
+            <br />
             <ul class="thumbnails">
                 <!--Three js popout boxes-->
                 <li class="span4 text-center">
-                    <a class="thumbnail" href="#">
+                    <a class="img-thumbnail" href="#">
                         <img src="img/DSC_2756.JPG" alt="My Image" />
-                        <span class="caption">This is my image</span>
+                        <span class="caption">Desert</span>
                     </a>
                 </li><!-- .span4 -->
 
                 <li class="span4 text-center">
                     <a class="thumbnail" href="#">
                         <img src="img/DSC_2771.JPG" alt="My Image" />
-                        <span class="caption">This is my image</span>
+                        <span class="caption">Mountains</span>
                     </a>
                 </li><!-- .span4 -->
 
                 <li class="span4 text-center">
                     <a class="thumbnail" href="#">
                         <img src="img/DSC_3070.JPG" alt="My Image" />
-                        <span class="caption">This is my image</span>
+                        <span class="caption">Cities</span>
                     </a>
                 </li><!-- .span4 -->
             </ul>
         </div>
     </div>
 
-    <div id="wrap">
+    <div class="container" id="pictureBox">
 
+    </div>
+
+
+    <div id="wrap">
     </div>
     <footer class="footer page-section" id="contact">
         <div class="container">
             <h1>Contact</h1>
+                <div class="row">
+                    <div class="span6" id="contactBox">
+                        <form>
+                            <fieldset>
+                                <input type="text" id="name" name="name" class="input-block-level" placeholder="Name">
+                                <input type="text" id="email" name="email" class="input-block-level" placeholder="Email">
+                                <textarea rows="8" id="description" name="description" class="input-block-level" placeholder="Description"></textarea>
+                                <button type="submit" class="btn btn-success pull-right">Submit</button>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
         </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/picSize.js"></script>
 </body>
 </html>

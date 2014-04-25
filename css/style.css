@@ -28,6 +28,7 @@ html, body {
     left:43%;
     right: 43%;
     max-width: 200px;
+    min-width: 100px;
     overflow: hidden;
     border: 2px solid white;
     box-shadow: 0 0 1.5px 1.5px black; /*sets secondary pic outline*/
@@ -41,10 +42,12 @@ html, body {
     width: 100%;
 }
 
-.blueLine {
-    margin-top: 10%;
+#gallery {
     background-color: #C1CDC1;
-    height: 40%;
+}
+
+.blueLine {
+    background-color: #C1CDC1;
 }
 
 /*.clickable {
@@ -62,16 +65,26 @@ li img {
 }
 
 #main {
-  overflow:auto;
-  padding-bottom:150px; /* this needs to be bigger than footer height*/
+    overflow: auto;
+    padding-bottom: 150px; /* this needs to be bigger than footer height*/
+}
+
+#pictureBox {
+    border: 2px solid black;
 }
 
 .footer {
   position: relative;
   margin-top: -150px; /* negative value of footer height */
-  height: 150px;
+  padding: inherit;
   clear:both;
   padding-top:20px;
   background-color: #2E2E2E;
   color: #FDFDF0;
+  text-align: center;
 } 
+
+#contactBox {
+  margin: 0 auto;
+  float: none;
+}
