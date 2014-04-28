@@ -35,6 +35,10 @@ html, body {
     border-radius: 100%;
 }
 
+.page-section {
+    padding-bottom: 3em;
+}
+
 #invisible {
     float: left;
     display: inline-block;
@@ -42,13 +46,20 @@ html, body {
     width: 100%;
 }
 
-#gallery {
-    background-color: #C1CDC1;
-}
-
 .blueLine {
     background-color: #C1CDC1;
+    position: relative;
+    padding-bottom: 3em;
+    padding-top: 3em;
 }
+
+.thumbnails {
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+
 
 /*.clickable {
     border: 2px solid black;
@@ -56,9 +67,6 @@ html, body {
     background: #EBECE4;
 }*/
 
-#wrap {
-  min-height: 100%;
-}
 
 li img {
     border-radius: 5px;
@@ -69,13 +77,9 @@ li img {
     padding-bottom: 150px; /* this needs to be bigger than footer height*/
 }
 
-#pictureBox {
-    border: 2px solid black;
-}
-
 .footer {
   position: relative;
-  margin-top: -150px; /* negative value of footer height */
+  /*  margin-top: -150px;  negative value of footer height */
   padding: inherit;
   clear:both;
   padding-top:20px;
@@ -87,4 +91,9 @@ li img {
 #contactBox {
   margin: 0 auto;
   float: none;
+}
+
+#bottom {
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
